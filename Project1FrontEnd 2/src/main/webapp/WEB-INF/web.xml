@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  <servlet>
+  
+  <servlet-name>ViewServlet</servlet-name>
+  <servlet-class>com.example.servlets.ViewServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ViewServlet</servlet-name>
+  <url-pattern>*.change</url-pattern>
+  <!-- the * is a wildcard place holder this mean any request with a url that ends with .change
+  will be sent to ViewServlet -->
+  	
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>JSONServlet</servlet-name>
+  <servlet-class>com.example.servlets.JSONServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>JSONServlet</servlet-name>
+  	<url-pattern>*.json</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
